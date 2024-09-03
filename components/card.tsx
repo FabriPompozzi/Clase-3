@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, Pressable, StyleSheet } from 'react-native';
+import { Text, Pressable, StyleSheet} from 'react-native';
 
 interface CardProps {     
     content: string;
@@ -22,13 +22,19 @@ const Card: React.FC <CardProps> = ({ content }) => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f5f5f5',
+  },
   card: {
-    width: 300,
-    height: 100,
+    width: '50%',
+    height: '20%',
     backgroundColor: '#ddd',
     justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: 10,
+    marginVertical: '2.5%',
     borderRadius: 8,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
